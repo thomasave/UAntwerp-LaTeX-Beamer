@@ -54,15 +54,17 @@
 }
 
 \setbeamertemplate{title page}{
-	\begin{beamercolorbox}[wd=\textwidth, ht=1.55cm, dp=0cm, leftskip=0cm]{title}%
+	\begin{beamercolorbox}[wd=\textwidth, ht=1.5cm, dp=0cm, leftskip=0cm]{title}%
         \begin{center}
-            \includegraphics[width=2.8cm,keepaspectratio]{template/logo_white.pdf}
+            \includegraphics[width=2.7cm,keepaspectratio]{template/logo_white.pdf}
         \end{center}
 	\end{beamercolorbox}%
-	\begin{beamercolorbox}[wd=\textwidth, ht=1.4cm, dp=0cm, leftskip=0cm]{white}%
-        \usebeamerfont{title}\usebeamercolor[fg]{title}\centerline\inserttitle
-	\end{beamercolorbox}%
-	\begin{beamercolorbox}[wd=\textwidth, ht=1.6cm, dp=0cm, leftskip=0cm]{white}%
+    \vspace{0.1cm}
+    \begin{center}
+        \linespread{0.65}
+        \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle
+    \end{center}
+	\begin{beamercolorbox}[wd=\textwidth, ht=1.2cm, dp=0cm, leftskip=0cm]{white}%
         \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\centerline\insertsubtitle
 	\end{beamercolorbox}%
 }
