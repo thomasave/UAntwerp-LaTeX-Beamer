@@ -11,18 +11,18 @@
 \RequirePackage{tikz}
 \setbeamertemplate{navigation symbols}{}
 
-\definecolor{UAntwerpenRed}{RGB}{235,44,56}
-\definecolor{UAntwerpenBrightRed}{RGB}{255,0,0}
-\definecolor{UAntwerpenBlue}{RGB}{0,46,101}
-\definecolor{UAntwerpenWhite}{RGB}{255,255,255}
+\definecolor{UAntwerpRed}{RGB}{235,44,56}
+\definecolor{UAntwerpBrightRed}{RGB}{255,0,0}
+\definecolor{UAntwerpBlue}{RGB}{0,46,101}
+\definecolor{UAntwerpWhite}{RGB}{255,255,255}
 
-\setbeamercolor{title}{bg=UAntwerpenRed}
+\setbeamercolor{title}{bg=UAntwerpRed}
 
-\setbeamercolor{normal text}{fg=UAntwerpenBlue}
-\setbeamercolor{subtitle}{fg=UAntwerpenWhite}
-\setbeamercolor{title}{fg=UAntwerpenWhite}
-\setbeamercolor{item}{parent={normal text}, fg=UAntwerpenRed}
-\setbeamercolor{frametitle}{parent={normal text}, fg=UAntwerpenBrightRed}
+\setbeamercolor{normal text}{fg=UAntwerpBlue}
+\setbeamercolor{subtitle}{fg=UAntwerpWhite}
+\setbeamercolor{title}{fg=UAntwerpWhite}
+\setbeamercolor{item}{parent={normal text}, fg=UAntwerpRed}
+\setbeamercolor{frametitle}{parent={normal text}, fg=UAntwerpBrightRed}
 
 \newcommand\HUGE{\@setfontsize\Huge{30}{47}}
 
@@ -35,7 +35,7 @@
 
 \setbeamertemplate{itemize items}{
     \begin{tikzpicture}
-        \fill[UAntwerpenRed] (0,0) rectangle (0.1,0.1) (0, -0.1);
+        \fill[UAntwerpRed] (0,0) rectangle (0.1,0.1) (0, -0.1);
     \end{tikzpicture}
 }
 \let\OLDitemize\itemize
@@ -48,7 +48,7 @@
 	\ifnum\thepage=1\relax%
     \begin{tikzpicture}
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-        \fill[color=UAntwerpenRed] (0,0) rectangle (\the\paperwidth,\the\paperheight);
+        \fill[color=UAntwerpRed] (0,0) rectangle (\the\paperwidth,\the\paperheight);
     \end{tikzpicture}%
 	\fi%
 }

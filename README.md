@@ -1,4 +1,4 @@
-UAntwerpen LaTeX Beamer template
+UAntwerp LaTeX Beamer template
 ================================
 
 This repository contains an unofficial LaTeX Beamer template that follows the new UAntwerp styling guidelines.
