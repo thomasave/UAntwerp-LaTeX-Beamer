@@ -1,9 +1,9 @@
 \DeclareOption{Calibri}{
-	\setsansfont[Ligatures=TeX,
-				 Extension=.ttf,
-				 BoldFont=*Bold,
-				 ItalicFont=*Italic
-				 ]{template/Calibri}
+    \setsansfont[Ligatures=TeX,
+    Extension=.ttf,
+    BoldFont=*Bold,
+    ItalicFont=*Italic
+    ]{template/Calibri}
 }
 
 \ProcessOptions
@@ -31,50 +31,52 @@
 \setbeamerfont{frametitle}{size=\huge, series=\bfseries, family=\fontspec{Calibri}}
 \setbeamerfont{enumerate item}{size=\small, series=\bfseries, family=\fontspec{Calibri}}
 \setbeamerfont{footline}{size=\tiny, series=\mdseries, family=\fontspec{Calibri}}
-\AtBeginDocument{\fontspec{Calibri}\bfseries\fontsize{13}{24}}
+
+\AtBeginDocument{\fontspec{Calibri}\bfseries\fontsize{13}{14}}
 
 \setbeamertemplate{itemize items}{
     \begin{tikzpicture}
         \fill[UAntwerpRed] (0,0) rectangle (0.1,0.1) (0, -0.1);
     \end{tikzpicture}
 }
+
 \let\OLDitemize\itemize
-\renewcommand\itemize{\OLDitemize\addtolength{\itemsep}{-0.25cm}}
+\renewcommand\itemize{\OLDitemize\addtolength{\itemsep}{0.09cm}}
 \let\OLDenumerate\enumerate
-\renewcommand\enumerate{\OLDenumerate\addtolength{\itemsep}{-0.25cm}}
+\renewcommand\enumerate{\OLDenumerate\addtolength{\itemsep}{0.09cm}}
 
 
 \setbeamertemplate{background}{%
-	\ifnum\thepage=1\relax%
-    \begin{tikzpicture}
-        \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-        \fill[color=UAntwerpRed] (0,0) rectangle (\the\paperwidth,\the\paperheight);
-    \end{tikzpicture}%
-	\fi%
+    \ifnum\thepage=1\relax%
+        \begin{tikzpicture}
+            \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+            \fill[color=UAntwerpRed] (0,0) rectangle (\the\paperwidth,\the\paperheight);
+        \end{tikzpicture}%
+    \fi%
 }
 
 \setbeamertemplate{title page}{
-	\begin{beamercolorbox}[wd=\textwidth, ht=1.5cm, dp=0cm, leftskip=0cm]{title}%
+    \begin{beamercolorbox}[wd=\textwidth, ht=1.5cm, dp=0cm, leftskip=0cm]{title}%
         \begin{center}
             \includegraphics[width=2.7cm,keepaspectratio]{template/logo_white.pdf}
         \end{center}
-	\end{beamercolorbox}%
+    \end{beamercolorbox}%
     \vspace{0.1cm}
     \begin{center}
         \linespread{0.65}
         \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle
     \end{center}
-	\begin{beamercolorbox}[wd=\textwidth, ht=1.2cm, dp=0cm, leftskip=0cm]{white}%
+    \begin{beamercolorbox}[wd=\textwidth, ht=1.2cm, dp=0cm, leftskip=0cm]{white}%
         \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\centerline\insertsubtitle
-	\end{beamercolorbox}%
+    \end{beamercolorbox}%
 }
 
 \setbeamertemplate{frametitle}{
-\vspace*{0.3cm}
-\begin{beamercolorbox}[wd=\textwidth, dp=0.3cm, ht=1.05cm, leftskip=0.2cm]{frametitle}
-      \usebeamerfont{frametitle}\insertframetitle%
-\end{beamercolorbox}
-\vspace*{-1.3cm}
+    \vspace*{0.3cm}
+    \begin{beamercolorbox}[wd=\textwidth, dp=0.3cm, ht=1.05cm, leftskip=0.2cm]{frametitle}
+        \usebeamerfont{frametitle}\insertframetitle%
+    \end{beamercolorbox}
+    \vspace*{-1.3cm}
 }
 
 \setbeamertemplate{footline}[text line]{%
