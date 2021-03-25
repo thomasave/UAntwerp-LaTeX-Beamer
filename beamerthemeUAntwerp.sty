@@ -24,6 +24,7 @@
 \setbeamercolor{item}{parent={normal text}, fg=UAntwerpRed}
 \setbeamercolor{frametitle}{parent={normal text}, fg=UAntwerpBrightRed}
 
+
 \newcommand\HUGE{\@setfontsize\Huge{30}{47}}
 
 \setbeamerfont{title}{size=\HUGE, series=\mdseries, family=\fontspec{Calibri}}
@@ -31,8 +32,8 @@
 \setbeamerfont{frametitle}{size=\huge, series=\bfseries, family=\fontspec{Calibri}}
 \setbeamerfont{enumerate item}{size=\small, series=\bfseries, family=\fontspec{Calibri}}
 \setbeamerfont{footline}{size=\tiny, series=\mdseries, family=\fontspec{Calibri}}
-
-\AtBeginDocument{\fontspec{Calibri}\bfseries\fontsize{13}{14}}
+\setbeamerfont{normal text}{series=\bfseries, family=\fontspec{Calibri}, size=\fontsize{13}{18}}
+\AtBeginDocument{\usebeamerfont{normal text}}
 
 \setbeamertemplate{itemize items}{
     \begin{tikzpicture}
@@ -44,6 +45,7 @@
 \renewcommand\itemize{\OLDitemize\addtolength{\itemsep}{0.09cm}}
 \let\OLDenumerate\enumerate
 \renewcommand\enumerate{\OLDenumerate\addtolength{\itemsep}{0.09cm}}
+\setlength{\leftskip}{0.25cm}
 
 
 \setbeamertemplate{background}{%
